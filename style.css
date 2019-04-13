@@ -5,13 +5,18 @@
   Light: hsl(210, 10%, 91%)
   Dark: hsl(210, 50%, 13%)
 */
+:root {
+  --LightColor: hsl(210, 10%, 91%);
+  --DarkColor: hsl(210, 50%, 13%);
+}
+
 .invisible {
   margin: 0px;
 }
 
 html {
   scroll-behavior: smooth;
-  background-color: hsl(210, 50%, 13%);
+  background-color: var(--DarkColor);
 }
 
 img {
@@ -24,7 +29,7 @@ img {
 
 /* INTRO PAGE */
 .introtext {
-  color: hsl(210, 50%, 13%);
+  color: var(--DarkColor);
   font-family: 'Palanquin', Helvetica, sans-serif;
 }
 
@@ -37,7 +42,7 @@ img {
   /* */
   height: 100vh;
   width: 100vw - 17px;
-  background-color: hsl(210, 10%, 91%);
+  background-color: var(--LightColor);
 }
 
 #intro-title {
@@ -53,7 +58,7 @@ img {
   height: 4px;
   width: 130px;
   border-radius: 1rem;
-  background-color: hsl(210, 50%, 13%);
+  background-color: var(--DarkColor);
 }
 
 #intro-desc {
@@ -74,26 +79,26 @@ img {
 
 .dark {
   top: 3rem;
-  border: solid hsl(210, 50%, 13%);
+  border: solid var(--DarkColor);
   border-width: 0 3px 3px 0;
 }
 
 .light {
   top: 0px;
-  border: solid hsl(210, 10%, 91%);
+  border: solid var(--LightColor);
   border-width: 0 3px 3px 0;
 }
 
 /* MAIN PAGE */
 .maintext {
-  color: hsl(210, 10%, 91%);
+  color: var(--LightColor);
   font-family: 'Palanquin', Helvetica, sans-serif;
 }
 
 .main-page {
   height: 100vh;
   width: 100vw- 17px;
-  background-color: hsl(210, 50%, 13%);
+  background-color: var(--DarkColor);
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
@@ -107,7 +112,7 @@ img {
 }
 
 .box {
-  border: solid hsl(210, 10%, 91%);
+  border: solid var(--LightColor);
   border-width: 3px;
   border-radius: 1rem;
 }
@@ -129,10 +134,10 @@ img {
 
 #submit {
   margin-left: 10px;
-  background-color: hsl(210, 10%, 91%);
+  background-color: var(--LightColor);
   border: none;
   border-radius: 1rem;
-  color: hsl(210, 50%, 13%);
+  color: var(--DarkColor);
   font-family: 'Palanquin', Helvetica, sans-serif;
   padding: 7px 10px 7px 10px;
 }
@@ -147,10 +152,10 @@ img {
 
 .getmemes {
   margin-left: 10px;
-  background-color: hsl(210, 10%, 91%);
+  background-color: var(--LightColor);
   border: none;
   border-radius: 1rem;
-  color: hsl(210, 50%, 13%);
+  color: var(--DarkColor);
   font-family: 'Palanquin', Helvetica, sans-serif;
   padding: 7px 10px 7px 10px;
 }
@@ -163,14 +168,14 @@ img {
 
 /* SCRAPE PAGE */
 .scrapetext {
-  color: hsl(210, 50%, 13%);
+  color: var(--DarkColor);
   font-family: 'Palanquin', Helvetica, sans-serif;
 }
 
 .scrape-page {
   height: 100vh;
   width: 100vw- 17px;
-  background-color: hsl(210, 10%, 91%);
+  background-color: var(--LightColor);
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
@@ -198,7 +203,7 @@ img {
   margin-left: 3%;
   width: 50%;
   padding: 7px 10px 7px 10px;
-  border: solid hsl(210, 50%, 13%);
+  border: solid var(--DarkColor);
   border-width: 3px;
   border-radius: 1rem;
 }

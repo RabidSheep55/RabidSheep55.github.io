@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+  <head>
+    <meta charset="utf-8">
+    <title>Lit Website</title>
+    <link href='style.css' rel="stylesheet">
+    <script src="scripts.js"></script>
+  </head>
+
+  <body class='invisible'>
+
+    <div class="intro-page">
+      <h2 id="intro-title" class="introtext">Hello!</h2>
+      <div class="line"></div>
+      <p id="intro-desc" class="introtext">Welcome to my first proper website. Imma be trying new things all the time here, please be patient. Also expect some bugs :)</p>
+      <a href="#mainpage" class="mainlink"><i class="arrow dark"></i></a>
+    </div>
+
+    <div class="main-page" id="mainpage">
+      <h2 id="main-title" class="maintext">My Website</h2>
+      <p class="maintext"><i>Right, lets get down to the business.</i></p>
+      <div class="wrapper">
+        <input type="text" name="textbox" placeholder="input stuff in here!" class="box maintext" id="textbox">
+        <button type="button" name="button" id="submit" onclick="buttonclicked()"><b>Submit!</b></button>
+        <button type="button" name="memebutton" onclick="getmeme()" class="getmemes"><b>Get Memes</b></button>
+      </div>
+
+      <p class="maintext outputtext" id="output">Script outputs stuff in here!</p>
+      <a href="#scrapepage" class="scrapelink"><i class="arrow light"></i></a>
+    </div>
+
+    <div class="scrape-page" id="scrapepage">
+      <div class="scrapehead">
+        <h2 class="scrapetext" id="scrape-title">The real deal:</h2>
+        <p class="scrapetext" id="scrape-desc"><b>The previous page was a prank lmao, this bit is the actual real deal. It doesn't use the normie hardcoded memes, don't worry.</b></p>
+      </div>
+      <p class="scrapetext">whoa thats a lotta typing</p>
+    </div>
+
+  </body>
+
+</html>

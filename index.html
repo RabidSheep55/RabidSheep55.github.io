@@ -3,40 +3,78 @@
 
   <head>
     <meta charset="utf-8">
-    <title>Lit Website</title>
+    <title>Personal Portfolio Webpage</title>
     <link href='style.css' rel="stylesheet">
-    <script src="scripts.js"></script>
   </head>
 
   <body class='invisible'>
 
-    <div class="intro-page">
-      <h2 id="intro-title" class="introtext">Hello!</h2>
+    <nav id="navbar">
+      <a id="profile-link" href="https://github.com/RabidSheep55" target="_blank"><img src="https://upload.wikimedia.org/wikipedia/commons/9/91/Octicons-mark-github.svg" alt="Github Logo" id="github-logo"></a>
+      <div id="link-wrapper">
+
+        <div class="linkbox">
+          <span class="link-underline"><a href="#welcome-section">Welcome</a></span>
+        </div>
+
+        <div class="linkbox">
+          <span class="link-underline"><a href="#projects">Projects</a></span>
+        </div>
+
+        <div class="linkbox">
+          <span class="link-underline"><a href="#contact">Contact</a></span>
+        </div>
+
+      </div>
+    </nav>
+
+    <section id="welcome-section">
+      <h1 id="intro-title">Hello!</h1>
       <div class="line"></div>
-      <p id="intro-desc" class="introtext">Welcome to my first proper website. Imma be trying new things all the time here, please be patient. Also expect some bugs :)</p>
-      <a href="#mainpage" class="mainlink"><i class="arrow dark"></i></a>
-    </div>
+      <p id="intro-desc">Welcome to my personal portfolio! Imma be trying new things all the time here, please be patient. Also expect some bugs :)</p>
+      <a href="#projects" class="mainlink"><i class="arrow dark" id="welcome-arrow"></i></a>
+    </section>
 
-    <div class="main-page" id="mainpage">
-      <h2 id="main-title" class="maintext">My Website</h2>
-      <p class="maintext"><i>Right, lets get down to the business.</i></p>
-      <div class="wrapper">
-        <input type="text" name="textbox" placeholder="input stuff in here!" class="box maintext" id="textbox">
-        <button type="button" name="button" id="submit" onclick="buttonclicked()"><b>Submit!</b></button>
-        <button type="button" name="memebutton" onclick="getmeme()" class="getmemes"><b>Get Memes</b></button>
+    <section id="projects">
+      <div id="projects-nav-fix">
+        <h1 class="page-title">Projects</h1>
+        <p class="page-desc">Here are some of my projects! Feel free to have a look through! I'll keep adding stuff here as I develop more stuff, I understand it's a bit empty right now.</p>
+
+        <div id="project-wrapper">
+
+          <a href="https://github.com/RabidSheep55/Python-Scripts/tree/master/Pathfinding" target="_blank" class="project-tile">
+            <h4 class="project-title">Python A* Implementation</h4>
+            <img src="https://raw.githubusercontent.com/RabidSheep55/Python-Scripts/master/Pathfinding/PathfindingShot1.jpg" alt="Solved Maze Screenshot" class="project-img">
+            <p class="project-desc">Implementation of the A* pathfinding algorithm in Python in order to solve generated mazes, finding the shortest path in a minimal amount of moves.</p>
+          </a>
+
+          <a href="https://github.com/RabidSheep55/FCC-Survey_Form" target="_blank" class="project-tile">
+            <h4 class="project-title">Survey Form</h4>
+            <img src="https://raw.githubusercontent.com/RabidSheep55/FCC-Survey_Form/master/SurveyFormScreenshot.jpg" alt="Survey Form Screenshot" class="project-img">
+            <p class="project-desc">FreeCodeCamp responsive web design project: building a survey form webpage</p>
+          </a>
+
+        </div>
+
       </div>
+    </section>
 
-      <p class="maintext outputtext" id="output">Script outputs stuff in here!</p>
-      <a href="#scrapepage" class="scrapelink"><i class="arrow light"></i></a>
-    </div>
-
-    <div class="scrape-page" id="scrapepage">
-      <div class="scrapehead">
-        <h2 class="scrapetext" id="scrape-title">The real deal:</h2>
-        <p class="scrapetext" id="scrape-desc"><b>The previous page was a prank lmao, this bit is the actual real deal. It doesn't use the normie hardcoded memes, don't worry.</b></p>
+    <section id="contact">
+      <div id="contact-nav-fix">
+        <h1 class="page-title">Contact Info</h1>
+        <p class="page-desc">Feel free to contact me on these!</p>
+        <div id="contact-wrapper">
+          <a href="https://www.youtube.com/channel/UCQaFznpQk8U9y2lURZE2e7g" target="_blank" class="contact-info"><img src="https://www.youtube.com/yt/about/media/images/brand-resources/icons/YouTube_icon_light.svg" alt="Youtube Logo"
+              class="contact-img"></a>
+          <a href="email:RabidSheep55@gmail.com" target="_blank" class="contact-info"><img src="https://image.flaticon.com/icons/svg/60/60543.svg" alt="Gmail Logo" class="contact-img"></a>
+          <a href="https://github.com/RabidSheep55" target="_blank" class="contact-info"><img src="https://upload.wikimedia.org/wikipedia/commons/9/91/Octicons-mark-github.svg" alt="Github Logo" class="contact-img"></a>
+        </div>
       </div>
-      <p class="scrapetext">whoa thats a lotta typing</p>
-    </div>
+    </section>
+
+    <section id="footer">
+      <p>Copyright 2019 - Pierre Tharreau</p>
+    </section>
 
   </body>
 

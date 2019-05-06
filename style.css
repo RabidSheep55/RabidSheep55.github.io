@@ -211,11 +211,12 @@ html {
 }
 
 #project-wrapper {
+  width: inherit;
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
   align-items: center;
-  justify-content: space-between;
+  justify-content: space-around;
   padding-bottom: 20px;
 }
 
@@ -355,6 +356,7 @@ html {
 }
 
 /* MEDIA QUERIES */
+/*
 @media only screen and (max-width: 656px) {
   #project-wrapper {
     display: flex;
@@ -367,3 +369,4 @@ html {
     margin-top: 20px;
   }
 }
+*/

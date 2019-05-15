@@ -276,6 +276,10 @@ html {
   align-items: center;
 }
 
+#cheekytext {
+  margin-top: -15px;
+}
+
 #testbox {
   width: auto;
   height: auto;
@@ -285,11 +289,6 @@ html {
   align-items: center;
   justify-content: center;
   margin-bottom: 20px;
-}
-
-#test-text {
-  width: 50%;
-  color: var(--LightColor);
 }
 
 /* INFO PAGE */

@@ -5,7 +5,8 @@ let mid = w * (n / 2);
 let ma;
 
 function setup() {
-  createCanvas(300, 300, WEBGL);
+  var canvas = createCanvas(300, 300, WEBGL);
+  canvas.parent('testbox');
   ortho(-width / 2, width / 2, -height / 2, height / 2, -10000, 10000);
   ma = atan(1 / sqrt(2))
 }

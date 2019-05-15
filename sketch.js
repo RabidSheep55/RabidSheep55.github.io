@@ -1,11 +1,11 @@
-let w = 10;
+let w = 25;
 let t = 0;
 let n = 10;
 let mid = w * (n / 2);
 let ma;
 
 function setup() {
-  var canvas = createCanvas(300, 300, WEBGL);
+  var canvas = createCanvas(400, 400, WEBGL);
   canvas.parent('testbox');
   ortho(-width / 2, width / 2, -height / 2, height / 2, -10000, 10000);
   ma = atan(1 / sqrt(2))

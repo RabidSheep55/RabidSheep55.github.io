@@ -48,7 +48,7 @@ html {
 #github-logo {
   width: 32px;
   padding: 10px;
-  transition: 0.3s;
+  transition: all 0.2s;
 }
 
 /*
@@ -56,7 +56,7 @@ html {
   filter: brightness(300%);
 }*/
 #github-logo:hover {
-  width: 35px;
+  filter: brightness(300%);
 }
 
 /* Link stuff
@@ -227,7 +227,7 @@ html {
   color: var(--DarkColor);
   border-radius: 7px;
   border: solid var(--LessDarkColor);
-  border-width: 7px 0px 7px 0px;
+  border-width: 7px 0px;
   text-decoration: none;
   /* Spacing of Stuff */
   display: flex;
@@ -250,8 +250,8 @@ html {
 }
 
 .project-desc {
-  margin: 9px 0px 9px 0px;
-  padding: 0px 7px 0px 7px;
+  margin: 9px 0px;
+  padding: 0px 7px;
   text-align: center;
   line-height: 1.6rem;
 }
